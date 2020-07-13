@@ -9,21 +9,14 @@
 
 class nBlock_Toggle: public nBlockSimpleNode<1>{
 	
-	
-	
 	public:
-	
-		nBlock_Toggle(uint32_t value);
-	
+		nBlock_Toggle (uint32_t dummy);
 		void triggerInput(uint32_t inputNumber, uint32_t value);
-		void endFrame();
-	
+		void endFrame(void);
 	
 	private:
-	
 		 uint32_t _state;
-	
+         uint32_t _dummy;	
 };
-
 
 #endif
