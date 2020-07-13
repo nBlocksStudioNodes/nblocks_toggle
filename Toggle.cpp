@@ -1,4 +1,4 @@
-#include "constant.h"
+#include "Toggle.h"
 
 
 /**
@@ -23,7 +23,7 @@ nBlock_Toggle :: nBlock_Toggle(uint32_t value): {
 * 
 */
 
-void nBlock_Constant :: triggerInput(uint32_t inputNumber,uint32_t value){
+void nBlock_Toggle :: triggerInput(uint32_t inputNumber,uint32_t value){
 	
 	
 	_state = ^_state; //Toggle _state
@@ -31,7 +31,7 @@ void nBlock_Constant :: triggerInput(uint32_t inputNumber,uint32_t value){
 	
 }
 
-void nBlock_Constant :: endFrame(){
+void nBlock_Toggle :: endFrame(){
 	
 	output[0] = _state;
 	
