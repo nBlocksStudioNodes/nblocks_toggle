@@ -7,7 +7,7 @@
 
 #include "nworkbench.h"
 
-class nBlock_Constant: public nBlockSimpleNode<1>{
+class nBlock_Toggle: public nBlockSimpleNode<1>{
 	
 	
 	
