@@ -11,7 +11,7 @@ class nBlock_Toggle: public nBlockSimpleNode<1>{
 	
 	public:
 		nBlock_Toggle (uint32_t dummy);
-		void triggerInput(uint32_t inputNumber, uint32_t value);
+		void triggerInput(nBlocks_Message message);
 		void endFrame(void);
 	
 	private:
